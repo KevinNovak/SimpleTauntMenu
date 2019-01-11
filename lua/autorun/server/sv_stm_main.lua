@@ -13,27 +13,6 @@ local function SendTauntsToPlayer(ply, tauntsTable)
     net.Send(ply)
 end
 
-local function AddTauntFiles(parentData)
-    local categories = parentData["categories"]
-    if categories ~= nil then
-        for categoryName, childData in SortedPairs(categories) do
-            AddTauntFiles(childData)
-        end
-    end
-
-    local sounds = parentData["sounds"]
-    if sounds ~= nil then
-        for soundPath, soundName in SortedPairsByValue(sounds) do
-            local path = "sound/" .. soundPath
-            if file.Exists(path, "GAME") then
-                resource.AddFile(path)
-            else
-                print("[WARNING] Could not find taunt at '" .. path .. "'.")
-            end
-        end
-    end
-end
-
 net.Receive(
     "SimpleTauntMenu/Play",
     function(len, ply)
@@ -64,7 +43,6 @@ hook.Add(
     "Initialize",
     "SimpleTauntMenu",
     function()
-        AddTauntFiles(TAUNTS_TABLE)
         SendTauntsToAll(TAUNTS_TABLE)
     end
 )

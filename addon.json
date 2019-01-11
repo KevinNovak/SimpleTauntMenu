@@ -1,0 +1,6 @@
+{
+    "title": "Simple Taunt Menu",
+    "type": "ServerContent",
+    "tags": ["fun"],
+    "ignore": [".git*", "README.md", "LICENSE"]
+}

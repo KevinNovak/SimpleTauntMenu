@@ -42,7 +42,7 @@ net.Receive(
             return
         end
 
-        -- CHeck if player is alive
+        -- Check if player is alive
         if not ply:Alive() then
             return
         end

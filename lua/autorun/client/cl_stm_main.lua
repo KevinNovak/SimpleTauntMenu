@@ -2,6 +2,9 @@ local menu = nil
 local menuOpen = false
 local tauntsTable = nil
 
+local menuKey = input.LookupBinding("+menu_context")
+local menuButtonCode = input.GetKeyCode(menuKey)
+
 local function PlayTaunt(soundPath)
     net.Start("SimpleTauntMenu/Play")
     net.WriteString(soundPath)
@@ -33,27 +36,17 @@ end
 
 local function CreateMenu()
     menu = DermaMenu()
-    menuOpen = false
     ApplyMenu(menu, tauntsTable)
 end
 
-local function KeyPressed(ply)
-    -- Check if we have a taunts table
-    if tauntsTable == nil then
-        return
-    end
+local function OpenMenu()
+    menu:Open()
+    menuOpen = true
+end
 
-    if not IsValid(menu) then
-        CreateMenu()
-    end
-
-    if not menuOpen then
-        menu:Open()
-        menuOpen = true
-    else
-        menu:Hide()
-        menuOpen = false
-    end
+local function HideMenu()
+    menu:Hide()
+    menuOpen = false
 end
 
 net.Receive(
@@ -64,11 +57,26 @@ net.Receive(
 )
 
 hook.Add(
-    "PlayerBindPress",
+    "Think",
     "SimpleTauntMenu",
-    function(ply, bind, pressed)
-        if bind == "+menu_context" and pressed then
-            KeyPressed(ply)
+    function()
+        if tauntsTable == nil then
+            return
+        end
+
+        if not IsValid(menu) then
+            CreateMenu()
+            HideMenu()
+        end
+
+        if input.IsButtonDown(menuButtonCode) then
+            if not menuOpen then
+                OpenMenu()
+            end
+        else
+            if menuOpen then
+                HideMenu()
+            end
         end
     end
 )

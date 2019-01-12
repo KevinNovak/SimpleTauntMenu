@@ -67,7 +67,7 @@ hook.Add(
     "PlayerBindPress",
     "SimpleTauntMenu",
     function(ply, bind, pressed)
-        if bind == "gm_showspare2" and pressed then
+        if bind == "+menu_context" and pressed then
             KeyPressed(ply)
         end
     end

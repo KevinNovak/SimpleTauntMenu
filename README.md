@@ -56,7 +56,7 @@ In order to add sounds to Simple Taunt Menu, we'll need to determine where sound
 2. Follow the existing table structure to add the taunts from the taunt pack.
    * Sound paths should be relative to the `sound` folder of the taunt pack.
    * Categories can have subcategories, and those subcategories can have more subcategories, and so on.
-   * See the [default taunt table](https://pastebin.com/4YA2jJxJ) or [a more complicated example](https://pastebin.com/mEhv6KzZ) using [DN PropHunt Taunt Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=426548393)
+   * See the [default taunt table](https://pastebin.com/4YA2jJxJ) or [a more complicated example](https://pastebin.com/mEhv6KzZ) using [DN PropHunt Taunt Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=426548393).
 
 ## References
 

@@ -30,6 +30,8 @@ This addon runs both server-side and client-side. Follow both sections below so 
 
 ## Adding Taunt Packs
 
+By default, Simple Taunt Menu comes with the taunts that are normally included with Prop Hunt. If you'd like to add additional taunt packs, follow the sections below.
+
 ### Forcing clients to download the taunt pack
 
 1. Locate the taunt pack from the [Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=4000) that you wish to add.
@@ -47,6 +49,11 @@ In order to add sounds to Simple Taunt Menu, we'll need to determine where sound
 3. Locate the taunt pack gma file in your steam install directory, under `steamapps\common\GarrysMod\garrysmod\addons`.
 3. Extract the gma file using something like [Gmad - Easy Addon Extractor](https://gamebanana.com/tools/5868) by [Freenex](https://gamebanana.com/members/1430762).
 4. Look in the extracted folder, in the `sound` directory, finding the paths to the sound files.
+
+### Adding the sound paths to the menu
+
+1. After you know the sound paths for each file, 
+
 
 ## References
 

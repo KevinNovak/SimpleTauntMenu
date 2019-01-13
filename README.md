@@ -52,8 +52,7 @@ In order to add sounds to Simple Taunt Menu, we'll need to determine where sound
 
 ### Adding the sound paths to the menu
 
-1. After you know the sound paths for each file, 
-
+1. After you know the sound paths for each file, locate Simple Taunt Menu's `sv_stm_taunts.lua` on the server under `garrysmod\addons\{Simple Taunt Menu Folder}\lua\autorun\server`.
 
 ## References
 

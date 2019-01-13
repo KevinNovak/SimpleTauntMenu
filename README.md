@@ -52,7 +52,11 @@ In order to add sounds to Simple Taunt Menu, we'll need to determine where sound
 
 ### Adding the sound paths to the menu
 
-1. After you know the sound paths for each file, locate Simple Taunt Menu's `sv_stm_taunts.lua` on the server under `garrysmod\addons\{Simple Taunt Menu Folder}\lua\autorun\server`.
+1. After you know the sound paths for each file, open Simple Taunt Menu's `sv_stm_taunts.lua` on the server under `garrysmod\addons\{Simple Taunt Menu Folder}\lua\autorun\server`. This file stores a table of categories, sound paths, and taunts that Simple Taunt Menu uses.
+2. Following the existing table structure to add the taunts from the taunt pack.
+   * Sound paths should be relative to the `sound` folder of the taunt pack.
+   * Categories can have subcategories, and those subcategories can have more subcategories, and so on.
+   * See the [default taunt table](https://pastebin.com/4YA2jJxJ) or [a more complicated example](https://pastebin.com/mEhv6KzZ) using [DN PropHunt Taunt Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=426548393)
 
 ## References
 

@@ -41,7 +41,8 @@ By default, Simple Taunt Menu comes with the taunts that are normally included w
 4. Add the following to the bottom of the file, replacing `{TAUNT_PACK_ID}` with the ID you found in the above step:
     - `resource.AddWorkshop("{TAUNT_PACK_ID}")`
 
-### Determining the paths of taunt pack's sound files
+### Determining the paths of the taunt pack's sound files
+
 In order to add sounds to Simple Taunt Menu, we'll need to determine where sounds are located in the taunt pack. The best way to do this is to download the taunt pack, and extract it's contents.
 
 1. Locate the taunt pack from the [Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=4000) that you wish to add.

@@ -2,7 +2,7 @@
 
 ![Simple Taunt Menu](https://i.imgur.com/qyVvqUn.png)
 
-[Simple Taunt Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=1620980553) is an easy way to add and organize taunts for ANY game mode. It also ships with the default taunts that are normally included with the [Prop Hunt](https://steamcommunity.com/sharedfiles/filedetails/?id=135509255) gamemode, but no need to install.
+[Simple Taunt Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=1620980553) is an easy way to add and organize taunts for ANY gamemode. It also ships with the default taunts that are normally included with the [Prop Hunt](https://steamcommunity.com/sharedfiles/filedetails/?id=135509255) gamemode, but no need to install.
 
 Just press and hold your `+menu_context` button (which is the "C" key by default) to bring up the taunt menu and click a taunt to begin taunting.
 

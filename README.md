@@ -41,7 +41,7 @@ By default, Simple Taunt Menu comes with the taunts that are normally included w
 4. Add the following to the bottom of the file, replacing `{TAUNT_PACK_ID}` with the ID you found in the above step:
     - `resource.AddWorkshop("{TAUNT_PACK_ID}")`
 
-### Determining the paths of sound files
+### Determining the paths of taunt pack's sound files
 In order to add sounds to Simple Taunt Menu, we'll need to determine where sounds are located in the taunt pack. The best way to do this is to download the taunt pack, and extract it's contents.
 
 1. Locate the taunt pack from the [Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=4000) that you wish to add.
@@ -50,9 +50,9 @@ In order to add sounds to Simple Taunt Menu, we'll need to determine where sound
 3. Extract the gma file using something like [Gmad - Easy Addon Extractor](https://gamebanana.com/tools/5868) by [Freenex](https://gamebanana.com/members/1430762).
 4. Look in the extracted folder, in the `sound` directory, finding the paths to the sound files.
 
-### Adding the sound paths to the menu
+### Adding the taunts to the menu
 
-1. After you know the sound paths for each file, open Simple Taunt Menu's `sv_stm_taunts.lua` on the server under `garrysmod\addons\{Simple Taunt Menu Folder}\lua\autorun\server`. This file stores a table of categories, sound paths, and taunts that Simple Taunt Menu uses.
+1. After determining the sound paths for each sound file you'd like to add, open Simple Taunt Menu's `sv_stm_taunts.lua` on the server under `garrysmod\addons\{Simple Taunt Menu Folder}\lua\autorun\server`. This file stores a table of categories, sound paths, and taunt names that Simple Taunt Menu uses.
 2. Follow the existing table structure to add the taunts from the taunt pack.
    * Sound paths should be relative to the `sound` folder of the taunt pack.
    * Categories can have subcategories, and those subcategories can have more subcategories, and so on.

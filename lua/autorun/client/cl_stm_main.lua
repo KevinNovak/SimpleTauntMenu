@@ -83,7 +83,7 @@ hook.Add(
             HideMenu()
         end
 
-        if input.IsButtonDown(menuButtonCode) then
+        if input.IsButtonDown(menuButtonCode) and not LocalPlayer():IsTyping() then
             if not menuOpen and not menuBlocked then
                 OpenMenu()
             end
